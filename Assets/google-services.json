@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "234912637602",
+    "firebase_url": "https://hlth-e2e69.firebaseio.com",
+    "project_id": "hlth-e2e69",
+    "storage_bucket": "hlth-e2e69.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:234912637602:android:127e524cd7b83387",
+        "android_client_info": {
+          "package_name": "com.HLTH.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "234912637602-j4sdkjjar9d1s6ee3u8nn8bbjri9o7e1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADwwTq5mj9nh04p3RlyjQggW6P5DmZ7Ns"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
