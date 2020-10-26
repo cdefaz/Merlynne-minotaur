@@ -6,18 +6,18 @@ using UnityEngine.UI;
 public class ShowPlayerID : MonoBehaviour
 {
 
-    private AddToGoogle AddGoog;
+    private AddToSQLite AddSQL;
     public Text IDText;
 
     // Use this for initialization
     void Start()
     {
-        AddGoog = GetComponent<AddToGoogle>();
+        AddSQL = GetComponent<AddToSQLite>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        IDText.text = "ID: " + AddGoog.playerid;
+        IDText.text = "ID: " + AddSQL.playerid;
     }
 }

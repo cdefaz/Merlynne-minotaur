@@ -54,7 +54,7 @@ public class dialogHolder : MonoBehaviour {
                 //tab = go to field
                 if (Input.GetKeyUp(KeyCode.Return))
                 {
-                    GetComponent<AddToGoogle>().Send();
+                    GetComponent<AddToSQLite>().Send();
                     Debug.Log("Enter was pressed");
                     
                 }

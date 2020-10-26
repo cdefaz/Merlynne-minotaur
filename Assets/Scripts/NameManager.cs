@@ -5,16 +5,16 @@ using UnityEngine.UI;
 
 public class NameManager : MonoBehaviour {
 
-    private AddToGoogle aGoog;
+    private AddToSQLite aSQL;
     public Text nameText;
 
     // Use this for initialization
     void Start () {
-        aGoog = GetComponent<AddToGoogle>();
+        aSQL = GetComponent<AddToSQLite>();
     }
 	
 	// Update is called once per frame
 	void Update () {
-        nameText.text = aGoog.PlayerId;
+        nameText.text = aSQL.PlayerId;
     }
 }
