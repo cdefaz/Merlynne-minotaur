@@ -1,6 +1,7 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AddToSQLite : MonoBehaviour
 {
@@ -51,7 +52,7 @@ public class AddToSQLite : MonoBehaviour
     IEnumerator Post(string name, string email, string phone, string playerid, string dialog, string lvlid)
     {
         LevelDb mlevelDb = new LevelDb();
-        mlevelDb.addData(playerid, name, email, phone, lvlid, dialog);
+        mlevelDb.addData(new DataEntity(playerid, name, email, phone, lvlid, dialog));
         mlevelDb.close();
         
         playerid.GetComponent<InputField>().text = PlayerId;
