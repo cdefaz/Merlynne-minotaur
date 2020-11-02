@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -40,7 +40,7 @@ public class AddToSQLite : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (theDM.dialogActive == true && Input.GetKeyUp(KeyCode.Return))
+        if (theDM?.dialogActive == true && Input.GetKeyUp(KeyCode.Return))
         {
             Send();
            // dHol.NPCimg.gameObject.SetActive(false);
@@ -54,8 +54,9 @@ public class AddToSQLite : MonoBehaviour
         LevelDb mlevelDb = new LevelDb();
         mlevelDb.addData(new DataEntity(playerid, name, email, phone, lvlid, dialog));
         mlevelDb.close();
+        yield return mlevelDb;
         
-        playerid.GetComponent<InputField>().text = PlayerId;
+        //PlayerId = playerid.GetComponent<InputField>().text;
     }
 
     public void Send()
