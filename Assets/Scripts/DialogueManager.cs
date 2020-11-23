@@ -15,7 +15,7 @@ public class DialogueManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        if (dHol == null) dHol = new dialogHolder();
+        if (dHol == null) dHol = dBox.AddComponent<dialogHolder>();
 
     }
 	
