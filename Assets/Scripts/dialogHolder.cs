@@ -43,7 +43,7 @@ public class dialogHolder : MonoBehaviour {
         if (other.gameObject.name == "Player") //this is attached to the monster
         {
             dialogueA = dMAn.dialogActive;
-            if (dialogueA == false && Input.GetKeyUp(KeyCode.Space))
+            if (dialogueA == false && Input.GetKeyUp(KeyCode.Backspace))
             {
                 dMAn.ShowBox(dialogue);
                 NPCMovement.anim = transform.parent.GetComponent<Animator>();

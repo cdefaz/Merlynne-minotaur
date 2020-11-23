@@ -612,7 +612,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 237746602}
-  attack1: 32
+  attack1: 8
   letgo1: 13
 --- !u!61 &237746600
 BoxCollider2D:
@@ -1323,7 +1323,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'R: To Interact
+  m_Text: 'Backspace: To Interact
 
     L: Exit'
 --- !u!222 &346355470
